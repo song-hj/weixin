@@ -98,16 +98,12 @@ public class WeiXinConfig {
 	
 	
 	public WeiXinConfig() {
-//		openAppid = "wx421f0a88b7ffa47c";
-//		openSecret = "bc5b0a5dc5046d2cd59d0b553286909f";
 		tokenUrl = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=${openAppid}&secret=${openSecret}";
 		accessToken = "";
 		oauthUrl = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=${openAppid}&redirect_uri=${redirectUri}&response_type=code&scope=snsapi_userinfo&state=stat#wechat_redirect";
 		oauthTokenUrl = "https://api.weixin.qq.com/sns/oauth2/access_token?appid=${openAppid}&secret=${openSecret}&code=${code}&grant_type=authorization_code";
 		userInfoUrl = "https://api.weixin.qq.com/sns/userinfo?access_token=${accessToken}&openid=${openid}&lang=zh_CN";
 		
-//		mchid = "1400648802";
-//		apiSecret = "oJGc8HX1wT4R5rpj3GexOMK3Ix0H1281";
 		orderUrl = "https://api.mch.weixin.qq.com/pay/unifiedorder";
 		notifyUrl = "http://ub.bxcker.com/wx/payCallback";
 		tempUrl = "https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=${accessToken}";
